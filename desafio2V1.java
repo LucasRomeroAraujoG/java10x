@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class desafio2 {
+public class desafio2V1 {
     static void main() {
         Scanner sc = new Scanner(System.in);
 
