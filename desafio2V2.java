@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class desafio2V2{
+public class Main{
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcao = -1;
@@ -42,10 +42,11 @@ public class desafio2V2{
                     ninjasCadastrados++;
                     break;
                 case 2:
+                    if(ninjas[0] == null){
+                        System.out.println("\nNão existem ninjas cadastrados!");
+                        break;
+                    }
                     for(int i = 0; i < ninjas.length;i++){
-                        if(ninjas[i] == null){
-                            break;
-                        }
                         System.out.printf("Ninja %d = %s\n", i+1, ninjas[i]);
                     }
                     break;
